@@ -170,6 +170,12 @@
 
     // activate reading of uncompressed tar archives
     archive_read_support_format_tar( a.get() );
+    //! MODIFICATIONS
+    archive_read_support_filter_gzip( a.get() );
+    archive_read_support_filter_bzip2( a.get() );
+    archive_read_support_filter_brotli( a.get() );
+
+
 
     // the need for `const_cast' was removed with libarchive commit be4d4dd
     if ( !( r = archive_read_open_memory(
