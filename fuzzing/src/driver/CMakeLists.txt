@@ -12,7 +12,7 @@
 add_executable(driver
   "${FUZZING_SRC_DIR}/driver/driver.cpp"
   "${FUZZING_SRC_DIR}/driver/DriverInternals.cpp"
-  "${FUZZING_SRC_DIR}/legacy/svg_fuzz.cc")
+  "${FUZZING_SRC_DIR}/legacy/ftfuzzer.cc")
 
 set_target_properties(driver PROPERTIES OUTPUT_NAME "${DRIVER_EXE_NAME}")
 
