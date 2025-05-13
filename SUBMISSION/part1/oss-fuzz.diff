@@ -1,0 +1,10 @@
+diff --git a/projects/freetype2/build.sh b/projects/freetype2/build.sh
+index c4a63c6eb..bd7f7d5d6 100755
+--- a/projects/freetype2/build.sh
++++ b/projects/freetype2/build.sh
+@@ -27,4 +27,4 @@ for f in "${OUT}/legacy"*; do
+     mv "${f}" "${f/legacy/ftfuzzer}"
+ done
+ 
+-zip -ju "${OUT}/ftfuzzer_seed_corpus.zip" "${SRC}/font-corpus/"*
++#zip -ju "${OUT}/ftfuzzer_seed_corpus.zip" "${SRC}/font-corpus/"*
